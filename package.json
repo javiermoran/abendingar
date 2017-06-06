@@ -1,0 +1,19 @@
+{
+  "name": "gurdgieff-api",
+  "version": "1.0.0",
+  "description": "Gurdgieff rules api",
+  "main": "index.js",
+  "scripts": {
+    "serve": "babel-node server.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-node6": "^11.0.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
