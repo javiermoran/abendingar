@@ -6,6 +6,11 @@ var express = require('express');
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
+app.route('/').get((req, res) => {
+  let response = {api:'Gurdgieff advices API', version: "1.0.0"} 
+  res.json(response)
+})
+
 var routes = require('./api/routes/list.routes')
 routes(app)
 
