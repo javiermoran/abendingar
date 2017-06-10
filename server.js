@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.route('/').get((req, res) => {
-  let response = {api:'Gurdgieff advices API', version: "1.0.0"} 
+  let response = {api:'Gurdjieff advices API', version: "1.0.0"} 
   res.json(response)
 })
 
@@ -20,4 +20,4 @@ app.use(function(req, res) {
 
 app.listen(port)
 
-console.log('Gurdgieff API server started on: ' + port)
+console.log('Gurdjieff API server started on: ' + port)
