@@ -7,7 +7,16 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.route('/').get((req, res) => {
-  let response = {api:'Gurdjieff advices API', version: "1.0.0"} 
+  let response = {
+    api:'Gurdjieff advices API', 
+    version: "1.0.0",
+    endpoints: [
+      '/advices',
+      '/advices/rand',
+      '/advices/{id}'
+    ]
+  }
+
   res.json(response)
 })
 
